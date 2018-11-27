@@ -1,0 +1,11 @@
+
+.mid{
+    margin: auto;
+    margin-top: 39px;
+    width: 385px;
+    padding: 40px;
+    border-radius: 5%;
+    box-shadow: -3px 9px 9px #8888BA;
+    text-align: center;
+    background-color: gray;
+}
