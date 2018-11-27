@@ -1,0 +1,28 @@
+#main {
+   
+
+
+.boxabout{
+    background-color: rgba(0,0,0,.5);
+    width: 1000px;
+    float: left;
+    margin: 100px;	
+    border-radius: 20px;
+}
+
+.textabout{
+    text-align: center;
+}
+.aboutBackground{
+    background: url("../images/Hashmi.png");
+    -webkit-bacground-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+}
+
