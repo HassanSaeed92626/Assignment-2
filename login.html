@@ -1,133 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-
-
-    <title>Login</title>
-
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-
-    <link rel="stylesheet" href="css/stylesheet.css">
+<title> User Login Form</title>
+<style>
+body{
+	background:url('9.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin:0;
+	padding:0;
+	font-family:Arial;
+	}
+.login{
+	margin:auto;
+	width:250px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.9);
+	padding:80px 40px;
+	margin-top:50px;
+	background:linear-gradient(top,#3c3c3c 0%,#222222 100%);
+	background:-webkit-linear-gradient(top,#3c3c3c 0%,#222222 100%);
+}
+h2{
+	margin:0 0 30px 0;
+	padding:10px;
+	color:#efed40;
+	text-alogn:center;
+}
+::placeholder{
+	color:rgba(255,255,255, 0.5);
+	text-align:center;
+}
+	input[type=submit]{
+	border:none;
+	outline:none;
+	padding:10px;
+	color:#fff;
+	font-size:16px;
+	font-family:Arial;
+	background:#ff267e;
+	cursor:pointer;
+	border-radius:20px;
+}
+	input[type=submit]:hover{
+	background:#efed40;
+	color:#262626;
+}
+a{
+color:#fff;
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+}
+a:hover{
+text-decoration:underline;
+}
+input{
+width:100%;
+margin-bottom:30px;
+}
+input[type=text],input[type=password]{
+border:none;
+outline:none;
+border:2px #fff dotted;
+background:transparent;
+border-radius:20px;
+box-sizing:border-box;
+color:#fff;
+font-size:16px;
+padding:10px;
+text-align:center;
+}
+</style>
 </head>
 <body>
-<!--new navbar responsive-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">PUBG Tips & Tricks</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="home.html">Home </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="login.html">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="registration.html">Register</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="forget.html">Forgot Password</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">LOGOUT</button>
-        </form>
-    </div>
-</nav>
-<form class="login-form">
-    <div class="login-container col-sm-10">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="example@example.com">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control " id="exampleInputPassword1"  required placeholder="Password">
-        </div>
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Stay loged in</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form>
-
-<!--footer -->
-<footer class="page-footer font-small bg-dark ">
-    <div style="background-color: #6351ce;">
-        <div class="container">
-            <div class="row py-4 d-flex align-items-center">
-                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                    <h5 class="mb-0">Stay Connected To Catch More Tips !</h5>
-                </div>
-                <div class="col-md-6 col-lg-7 text-center text-md-right ">
-                    <i class="fab fa-facebook-square"></i>
-                    &nbsp;
-                    <i class="fab fa-twitter"></i>
-                    &nbsp;
-                    <i class="fas fa-envelope"></i>
-                    &nbsp;
-                    <i class="fab fa-google-plus-g"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container text-center text-md-left mt-5 footer_">
-        <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 class="text-uppercase font-weight-bold">PUBG TRICKS&TIPS</h6>
-                <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    Be A Pro Player :)
-                </p>
-            </div>
-
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-                <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <ul class="navbar-nav mr-auto">
-                    <li class="footer-links">
-                        <a class="nav-link" href="login.html">Your Account</a>
-                    </li>
-                    <li class="footer-links">
-                        <a class="nav-link" href="registration.html">Become a Member</a>
-                    </li>
-                    <li class="footer-links">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <i class="fa fa-home mr-3"></i> University of Central Punjab, Lahore, Pakistan</p>
-                <p>
-                    <i class="fa fa-envelope mr-3"></i> info@pubgtipsandtricks.com</p>
-                <p>
-                    <i class="fa fa-phone mr-3"></i> + 921 234 567 88</p>
-                <p>
-                    <i class="fa fa-print mr-3"></i> + 921 234 567 89</p>
-
-            </div>
-        </div>
-    </div>
-</footer>
+<div class="Login">
+	<h2>Log in here</h2>
+	<form>
+	<input type="text"name="email" placeholder ="Enter Email">
+	<input type="Password"name=" Password"placeholder ="Enter Password">
+	<input type="Submit"name="LogIn"value="LogIn">
+	<a heref="!">Forget Password</a>
+	</form>
+</div>
 </body>
 </html>
